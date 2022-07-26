@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import * as fadeIn from '../../styles/animation'
+import { fadeIn } from '../../styles/animation'
 
 export const ImgWrapper = styled.div`
   border-radius: 10px;
@@ -8,11 +8,11 @@ export const ImgWrapper = styled.div`
   overflow: hidden;
   padding: 56.25% 0 0 0;
   position: relative;
-  width: 100%;
+  width: 100%; 
 `
 
 export const Img = styled.img`
-  ${fadeIn};
+  ${fadeIn()}
   box-shadow: 0 10px 14px rgba(0, 0, 0, .2);
   height: 100%;
   object-fit: cover;
@@ -22,10 +22,10 @@ export const Img = styled.img`
 `
 
 export const Button = styled.button`
-  display: flex; 
+  display: flex;
   align-items: center;
-  padding-top: 8px;    
+  padding-top: 8px;
   & svg {
-      margin-right: 4px;
+    margin-right: 4px;
   }
 `

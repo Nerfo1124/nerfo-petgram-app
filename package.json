@@ -7,7 +7,7 @@
     "vercel-build": "npm run build",
     "build": "webpack",
     "lint": "standard",
-    "dev": "webpack-dev-server",
+    "dev": "webpack-dev-server --history-api-fallback",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -39,6 +39,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
+    "react-router-dom": "^6.3.0",
     "styled-components": "^5.3.5"
   },
   "standard": {
